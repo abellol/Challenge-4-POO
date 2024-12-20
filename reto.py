@@ -1,4 +1,3 @@
-
 class MenuItem:
   """
   base class that define general parameters for each item from menu
@@ -132,7 +131,6 @@ Discounts:
 
     return f"Total: ${total}"
 
-
 class Menu:
   """
   Represents a menu containing various menu items, including appetizers, beverages,
@@ -169,14 +167,11 @@ class Menu:
         return item 
     return None  
 
-  
   def show_menu(self) -> None:
     print("\tMenu")
     for item in self.__menu_items:
         print(f"{item.name}: ${item.price}")
     print("-------------------------")
-
-
 
 if __name__ == "__main__":
   # Example menu
